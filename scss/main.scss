@@ -35,3 +35,50 @@ body {
   width: 343px;
   height: 120px;
 }
+.img-thumbnail {
+  border: none;
+}
+.image-hero-desktop {
+  display: none;
+}
+.cards-container {
+  background: linear-gradient(180deg, #f2f2f2 0%, #f0f1ff 100%);
+}
+.cards-intro {
+  margin-top: 3rem;
+  border: solid 2px #f02aa6;
+  border-radius: 1rem;
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  color: white;
+}
+.card {
+  border-radius: 1rem;
+  width: 343px !important;
+  margin-top: 3rem;
+  .card-img-top {
+    width: 56px;
+    height: 56px;
+    transform: translateY(-25px);
+  }
+}
+a {
+  color: #f74780;
+  text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+  .heading-container {
+    margin-top: 17rem;
+    margin-bottom: 25rem;
+  }
+  .img-thumbnail {
+    display: none;
+  }
+  .image-hero-desktop {
+    display: block;
+    position: absolute;
+    bottom: 1rem;
+  }
+  .cards-intro {
+    height: 234px;
+  }
+}
