@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 16px;
+  overflow-x: hidden;
 }
 .navbar-brand {
   width: auto;
@@ -65,7 +66,15 @@ a {
   color: #f74780;
   text-decoration: none;
 }
-@media screen and (min-width: 768px) {
+// @media screen and (min-width: 1000px) {
+//   .image-hero-desktop {
+//     width: 50rem;
+//     bottom: 0rem;
+//     right: -50rem;
+//   }
+// }
+
+@media screen and (min-width: 900px) {
   .heading-container {
     margin-top: 17rem;
     margin-bottom: 25rem;
@@ -74,11 +83,29 @@ a {
     display: none;
   }
   .image-hero-desktop {
-    display: block;
+    display: flex;
     position: absolute;
-    bottom: 1rem;
+    bottom: 9rem;
+    right: -12rem;
+    margin-left: 20rem;
+    z-index: 100;
   }
   .cards-intro {
+    width: 343px;
     height: 234px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .image-hero-desktop {
+    width: 70rem;
+    right: -25rem;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .image-hero-desktop {
+    width: 70rem;
+    right: -25rem;
+    bottom: 0rem;
   }
 }
